@@ -4,7 +4,6 @@ function my_Dictionary() {
         Color: "Black",
         Breed: "Labrador",
         Age: 5,
-        Age: 5,
         Sound: "Bark!"
     };
     delete Animal.Sound;
