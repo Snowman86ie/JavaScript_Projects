@@ -26,7 +26,7 @@ function get_Date() { //function to get the current time
 }
 
 function Age_Function() { //creating Age_function
-    Age = document.getElementById("Age").Value; //setting age = to user input
+    Age = document.getElementById("Age").value; //setting age = to user input
     if (Age >= 18) { //if they are 18 or over they can vote
         Vote = "You are old enough to vote"
     } else {
