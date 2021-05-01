@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Snowman86</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./CSS/one_page_website.css">
+    <script src="./JS/one_page_website.js" defer></script>
+</head>
+
+<body class="background">
+
+    <!-- NAV -->
+    <div class="menu-wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <a href="#home" id="link">
+                    <li>Home</li>
+                </a>
+                <a href="#thumbnails" id="link">
+                    <li>Thumbnails</li>
+                </a>
+                <a href="#subscribe" id="link">
+                    <li>Subscribe</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!--End NAV -->
+
+    <!--Home-->
+    <div id="home">
+        <div class="container">
+            <div class="intro">
+                <article>
+                    <h2><span class="logo">Snowman86</span></h2>
+                    <p><a href="https://www.youtube.com/channel/UCslfauGVC7gP6SocfjQ0SUg/" target="_blank">Youtube Channel</a> Be sure to head over to my Youtube page and enjoy yourself!</p>
+                </article>
+                <p>Videos releases on Wednesdays and Saturdays at <time>09:00</time> &#128512;</p>
+            </div>
+
+        </div>
+    </div>
+    <!--End Home-->
+
+    <!--Thumbnails-->
+    <section>
+        <div id="thumbnails">
+            <h1>Thumbnails</h1>
+            <div class="row">
+
+                <!--Thumbnail Container 1 -->
+                <div class="column">
+                    <div>
+                        <img src="./images/thumb/thumbnail_1.png" alt="Lets play on Gatehead farm ep1" onclick="openModal(); currentSlide(1)" class="hover-shadow">
+                        <div>
+                            <h3>Click to View</h3>
+                            <P>We have weekly videos, be sure to check them out</p><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Thumbnail Container 1 -->
+                <!--Thumbnail Container 2 -->
+                <div class="column">
+                    <div>
+                        <img src="./images/thumb/thumbnail_2.png" alt="Lets play on Gatehead farm ep2" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+                        <div>
+                            <h3>Click to View</h3>
+                            <P>We have weekly videos, be sure to check them out</p><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Thumbnail Container 2 -->
+                <!--Thumbnail Container 3 -->
+                <div class="column">
+                    <div>
+                        <img src="./images/thumb/thumbnail_3.png" alt="Lets play on Gatehead farm ep3" onclick="openModal(); currentSlide(3)" class="hover-shadow">
+                        <div>
+                            <h3>Click to View</h3>
+                            <P>We have weekly videos, be sure to check them out</p><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Thumbnail Container 3 -->
+                <!--Thumbnail Container 4 -->
+                <div class="column">
+                    <div>
+                        <img src="./images/thumb/thumbnail_4.png" alt="Lets play on Gatehead farm ep4" onclick="openModal(); currentSlide(4)" class="hover-shadow">
+                        <div>
+                            <h3>Click to View</h3>
+                            <P>We have weekly videos, be sure to check them out</p><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Thumbnail Container 4 -->
+                <!--Thumbnail Container 5 -->
+                <div class="column">
+                    <div>
+                        <img src="./images/thumb/thumbnail_5.png" alt="Journey man on Football manager ep1" onclick="openModal(); currentSlide(5)" class="hover-shadow">
+                        <div>
+                            <h3>Click to View</h3>
+                            <P>We have weekly videos, be sure to check them out</p><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Thumbnail Container 5 -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Thumbnails -->
+
+    <!-- The Modal/Lightbox-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="./images/Thumb/thumbnail_1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="./images/Thumb/thumbnail_2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="./images/Thumb/thumbnail_3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="./images/Thumb/thumbnail_4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="./images/Thumb/thumbnail_5.png" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="./images/Thumb/thumbnail_1.png" onclick="currentSlide(1)" alt="Lets Play EP1">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/Thumb/thumbnail_2.png" onclick="currentSlide(2)" alt="Lets Play Ep2">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/Thumb/thumbnail_3.png" onclick="currentSlide(3)" alt="Lets Play Ep3">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/Thumb/thumbnail_4.png" onclick="currentSlide(4)" alt="Lets Play EP4">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/Thumb/thumbnail_5.png" onclick="currentSlide(5)" alt="Juurney Man EP1">
+            </div>
+        </div>
+    </div>
+
+    <!--Subscribe-->
+    <section id="subscribe">
+        <div class="subbed">
+            <div>
+                <h1>Subscribe</h1>
+                <div class="subscribe-container ">
+                    <h2><span>Be sure to subscribe to keep up to date on when videos are relased.</span>
+                        <br />Subscribe now!
+                    </h2>
+                    <p>Please provide us with your basic conact information and sign up to the monthly newsletter.</p>
+                    <div class="form-container">
+                        <form action=" " method="post ">
+                            <input class="sub" type="text " value="First Name ">
+                            <input class="sub" type="text " value="Last Name ">
+                            <input class="sub" type="text " value="Email Address ">
+                            <div class="submit">
+                                <input type="submit " value="Submit ">
+                            </div>
+                            <div class="form-spacer ">
+                                <label class="terms ">Terms and Conditions</label>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Sub -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <details>
+            <summary><em>www.snowman86.com &nbsp;|&nbsp; &copy; 2021 &nbsp;|&nbsp; Gaming isn't a Crime.</em></summary>
+        </details>
+    </div>
+    <!-- End Footer -->
+
+</body>
+
+</html>
