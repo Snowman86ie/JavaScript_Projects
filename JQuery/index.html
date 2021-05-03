@@ -11,8 +11,8 @@
 <body>
     <script>
         document.write("Hello");
-        $(document).ready(function() {
-            $("html").append(
+        $(document).ready(function() { //once page is loaded it will run the jQuery below
+            $("html").append( //adds the below text to the html tag
                 "<body>\
                     <div id= 'container'>\
                         <div id = 'inner'>\
@@ -24,10 +24,10 @@
                     </div>\
                 </body>"
             );
-            $("#2").css({
+            $("#2").css({ //finds id = 2 and changes color to red
                 "color": "red"
             });
-            $("#3").click(function() {
+            $("#3").click(function() { //on lcicking the p id =3 it will hide the h1 tag in the above code
                 $("h1").hide();
             });
         });
