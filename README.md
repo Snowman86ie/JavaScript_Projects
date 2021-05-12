@@ -1,3 +1,10 @@
-# JavaScript_Projects
+# JavaScript_Project
 
-This folder will contain a few different projects, build using JavaScript
+These are some small projects I made using JavaScript
+
+##Projects:
+*Pizza Menu
+*Tic-Tac-Toe Game
+*Calculator
+
+
