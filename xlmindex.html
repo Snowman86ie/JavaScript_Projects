@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        var XLM_Parser, XLM_Document;
+
+        //creates a text string
+        var Movie = "<movie>" + "<title>Schindler\'s List</title>" + "<director>Steven Spielberg</director>" + "<starring>Liam Neelson</starring>" + "<year>1993</year>" + "</movie>";
+
+        //creates a XLM DOM parser
+        XLM_Parser = new DOMParser();
+
+        //creates a new XLM DOM object using the text string
+        XLM_Document = XLM_Parser.parseFromString(Movie, "text/xml");
+
+        document.getElementById("XLM_Example").innerHTML = XLM_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    </script>
+
+
+    <p id="XLM_Example">test</p>
+</body>
+
+</html>
